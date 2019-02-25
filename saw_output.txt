@@ -1,0 +1,877 @@
+-----  RDT Network Simulator --------
+
+the number of messages to simulate: 10
+packet loss probability: 0.200000
+packet corruption probability: 0.300000
+average time between messages from sender's app layer: 1000.000000
+TRACE: 3
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 0.000000
+        INSERTEVENT: future time will be 1870.573975
+===============================================================
+                         A_INITIALIZED
+===============================================================
+===============================================================
+                         B_INITIALIZED
+===============================================================
+EVENT time: 1870.573975,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 1870.573975
+        INSERTEVENT: future time will be 3512.483887
+        MAINLOOP: data given to student: aaaaaaaaaaaaaaaaaaa
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1844)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 1870.573975
+        INSERTEVENT: future time will be 1876.039062
+        START TIMER: starting timer at 1870.573975
+        INSERTEVENT: time is 1870.573975
+        INSERTEVENT: future time will be 1890.573975
+EVENT time: 1876.039062,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1844)
+===============================================================
+===============================================================
+         B_RECV: SENDING B_PACKET TO NETWORK LAYER (0)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 1876.039062
+        INSERTEVENT: future time will be 1878.220703
+EVENT time: 1878.220703,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+        A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (0)
+===============================================================
+EVENT time: 1890.573975,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1844)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+        START TIMER: starting timer at 1890.573975
+        INSERTEVENT: time is 1890.573975
+        INSERTEVENT: future time will be 1910.573975
+EVENT time: 1910.573975,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1844)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+        START TIMER: starting timer at 1910.573975
+        INSERTEVENT: time is 1910.573975
+        INSERTEVENT: future time will be 1930.573975
+EVENT time: 1930.573975,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1844)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 1930.573975
+        INSERTEVENT: future time will be 1939.818481
+        START TIMER: starting timer at 1930.573975
+        INSERTEVENT: time is 1930.573975
+        INSERTEVENT: future time will be 1950.573975
+EVENT time: 1939.818481,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1844)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: aaaaaaaaaaaaaaaaaaa
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+EVENT time: 1950.573975,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1844)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 1950.573975
+        INSERTEVENT: future time will be 1952.052368
+        START TIMER: starting timer at 1950.573975
+        INSERTEVENT: time is 1950.573975
+        INSERTEVENT: future time will be 1970.573975
+EVENT time: 1952.052368,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1844)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 1952.052368
+        INSERTEVENT: future time will be 1957.324585
+EVENT time: 1957.324585,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (171)
+===============================================================
+        STOP TIMER: stopping timer at 1957.324585
+EVENT time: 3512.483887,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 3512.483887
+        INSERTEVENT: future time will be 4948.687500
+        MAINLOOP: data given to student: bbbbbbbbbbbbbbbbbbb
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1863)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 3512.483887
+        INSERTEVENT: future time will be 3518.513428
+        START TIMER: starting timer at 3512.483887
+        INSERTEVENT: time is 3512.483887
+        INSERTEVENT: future time will be 3532.483887
+EVENT time: 3518.513428,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1863)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: bbbbbbbbbbbbbbbbbbb
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+EVENT time: 3532.483887,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1863)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 3532.483887
+        INSERTEVENT: future time will be 3536.547607
+        START TIMER: starting timer at 3532.483887
+        INSERTEVENT: time is 3532.483887
+        INSERTEVENT: future time will be 3552.483887
+EVENT time: 3536.547607,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1863)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 3536.547607
+        INSERTEVENT: future time will be 3538.331543
+EVENT time: 3538.331543,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (172)
+===============================================================
+EVENT time: 3552.483887,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1863)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 3552.483887
+        INSERTEVENT: future time will be 3556.642578
+        START TIMER: starting timer at 3552.483887
+        INSERTEVENT: time is 3552.483887
+        INSERTEVENT: future time will be 3572.483887
+EVENT time: 3556.642578,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1863)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+EVENT time: 3572.483887,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1863)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 3572.483887
+        INSERTEVENT: future time will be 3578.321777
+        START TIMER: starting timer at 3572.483887
+        INSERTEVENT: time is 3572.483887
+        INSERTEVENT: future time will be 3592.483887
+EVENT time: 3578.321777,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1863)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 3578.321777
+        INSERTEVENT: future time will be 3580.197021
+EVENT time: 3580.197021,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (172)
+===============================================================
+        STOP TIMER: stopping timer at 3580.197021
+EVENT time: 4948.687500,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 4948.687500
+        INSERTEVENT: future time will be 4961.679688
+        MAINLOOP: data given to student: ccccccccccccccccccc
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1882)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 4948.687500
+        INSERTEVENT: future time will be 4949.993652
+        START TIMER: starting timer at 4948.687500
+        INSERTEVENT: time is 4948.687500
+        INSERTEVENT: future time will be 4968.687500
+EVENT time: 4949.993652,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1882)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: ccccccccccccccccccc
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 4949.993652
+        INSERTEVENT: future time will be 4955.572266
+EVENT time: 4955.572266,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (171)
+===============================================================
+EVENT time: 4961.679688,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 4961.679688
+        INSERTEVENT: future time will be 6690.848633
+        MAINLOOP: data given to student: ddddddddddddddddddd
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+        A_SEND: NEW PACKET NOT SENT TO NETWORK LAYER YET
+===============================================================
+EVENT time: 4968.687500,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1882)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 4968.687500
+        INSERTEVENT: future time will be 4970.443359
+        START TIMER: starting timer at 4968.687500
+        INSERTEVENT: time is 4968.687500
+        INSERTEVENT: future time will be 4988.687500
+EVENT time: 4970.443359,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1882)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 4970.443359
+        INSERTEVENT: future time will be 4973.321289
+EVENT time: 4973.321289,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (171)
+===============================================================
+        STOP TIMER: stopping timer at 4973.321289
+EVENT time: 6690.848633,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 6690.848633
+        INSERTEVENT: future time will be 8556.644531
+        MAINLOOP: data given to student: eeeeeeeeeeeeeeeeeee
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1920)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 6690.848633
+        INSERTEVENT: future time will be 6697.967285
+        START TIMER: starting timer at 6690.848633
+        INSERTEVENT: time is 6690.848633
+        INSERTEVENT: future time will be 6710.848633
+EVENT time: 6697.967285,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1920)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: eeeeeeeeeeeeeeeeeee
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 6697.967285
+        INSERTEVENT: future time will be 6699.244629
+EVENT time: 6699.244629,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (172)
+===============================================================
+        STOP TIMER: stopping timer at 6699.244629
+EVENT time: 8556.644531,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 8556.644531
+        INSERTEVENT: future time will be 10421.403320
+        MAINLOOP: data given to student: fffffffffffffffffff
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1939)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 8556.644531
+        INSERTEVENT: future time will be 8558.916992
+        START TIMER: starting timer at 8556.644531
+        INSERTEVENT: time is 8556.644531
+        INSERTEVENT: future time will be 8576.644531
+EVENT time: 8558.916992,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1939)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+EVENT time: 8576.644531,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1939)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 8576.644531
+        INSERTEVENT: future time will be 8578.451172
+        START TIMER: starting timer at 8576.644531
+        INSERTEVENT: time is 8576.644531
+        INSERTEVENT: future time will be 8596.644531
+EVENT time: 8578.451172,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1939)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+EVENT time: 8596.644531,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1939)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 8596.644531
+        INSERTEVENT: future time will be 8599.661133
+        START TIMER: starting timer at 8596.644531
+        INSERTEVENT: time is 8596.644531
+        INSERTEVENT: future time will be 8616.644531
+EVENT time: 8599.661133,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1939)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: fffffffffffffffffff
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 8599.661133
+        INSERTEVENT: future time will be 8604.415039
+EVENT time: 8604.415039,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (171)
+===============================================================
+        STOP TIMER: stopping timer at 8604.415039
+EVENT time: 10421.403320,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 10421.403320
+        INSERTEVENT: future time will be 10750.820312
+        MAINLOOP: data given to student: ggggggggggggggggggg
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1958)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 10421.403320
+        INSERTEVENT: future time will be 10427.387695
+        START TIMER: starting timer at 10421.403320
+        INSERTEVENT: time is 10421.403320
+        INSERTEVENT: future time will be 10441.403320
+EVENT time: 10427.387695,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1958)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: ggggggggggggggggggg
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 10427.387695
+        INSERTEVENT: future time will be 10435.250000
+EVENT time: 10435.250000,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (172)
+===============================================================
+EVENT time: 10441.403320,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1958)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+        START TIMER: starting timer at 10441.403320
+        INSERTEVENT: time is 10441.403320
+        INSERTEVENT: future time will be 10461.403320
+EVENT time: 10461.403320,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1958)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 10461.403320
+        INSERTEVENT: future time will be 10469.361328
+        START TIMER: starting timer at 10461.403320
+        INSERTEVENT: time is 10461.403320
+        INSERTEVENT: future time will be 10481.403320
+EVENT time: 10469.361328,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1958)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 10469.361328
+        INSERTEVENT: future time will be 10473.753906
+EVENT time: 10473.753906,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (172)
+===============================================================
+        STOP TIMER: stopping timer at 10473.753906
+EVENT time: 10750.820312,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 10750.820312
+        INSERTEVENT: future time will be 11354.875000
+        MAINLOOP: data given to student: hhhhhhhhhhhhhhhhhhh
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1977)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 10750.820312
+        INSERTEVENT: future time will be 10760.667969
+        START TIMER: starting timer at 10750.820312
+        INSERTEVENT: time is 10750.820312
+        INSERTEVENT: future time will be 10770.820312
+EVENT time: 10760.667969,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1977)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: hhhhhhhhhhhhhhhhhhh
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 10760.667969
+        INSERTEVENT: future time will be 10763.413086
+EVENT time: 10763.413086,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (171)
+===============================================================
+        STOP TIMER: stopping timer at 10763.413086
+EVENT time: 11354.875000,  type: 1, from app layer entity: 0
+        GENERATE NEXT ARRIVAL: creating new arrival
+        INSERTEVENT: time is 11354.875000
+        INSERTEVENT: future time will be 12863.125977
+        MAINLOOP: data given to student: iiiiiiiiiiiiiiiiiii
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (1996)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 11354.875000
+        INSERTEVENT: future time will be 11361.490234
+        START TIMER: starting timer at 11354.875000
+        INSERTEVENT: time is 11354.875000
+        INSERTEVENT: future time will be 11374.875000
+EVENT time: 11361.490234,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (1996)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: iiiiiiiiiiiiiiiiiii
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet being lost
+EVENT time: 11374.875000,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1996)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 11374.875000
+        INSERTEVENT: future time will be 11383.906250
+        START TIMER: starting timer at 11374.875000
+        INSERTEVENT: time is 11374.875000
+        INSERTEVENT: future time will be 11394.875000
+EVENT time: 11383.906250,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1996)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 11383.906250
+        INSERTEVENT: future time will be 11385.419922
+EVENT time: 11385.419922,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (172)
+===============================================================
+EVENT time: 11394.875000,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (1996)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 11394.875000
+        INSERTEVENT: future time will be 11395.972656
+        START TIMER: starting timer at 11394.875000
+        INSERTEVENT: time is 11394.875000
+        INSERTEVENT: future time will be 11414.875000
+EVENT time: 11395.972656,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (1996)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 11395.972656
+        INSERTEVENT: future time will be 11398.122070
+EVENT time: 11398.122070,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (172)
+===============================================================
+        STOP TIMER: stopping timer at 11398.122070
+EVENT time: 12863.125977,  type: 1, from app layer entity: 0
+        MAINLOOP: data given to student: jjjjjjjjjjjjjjjjjjj
+===============================================================
+                        START OF A_SEND
+===============================================================
+===============================================================
+              A_STATE IS READY TO SEND NEW PACKET
+===============================================================
+===============================================================
+           A_SEND: NEW PACKET TO NETWORK LAYER (2015)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12863.125977
+        INSERTEVENT: future time will be 12864.709961
+        START TIMER: starting timer at 12863.125977
+        INSERTEVENT: time is 12863.125977
+        INSERTEVENT: future time will be 12883.125977
+EVENT time: 12864.709961,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (2015)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12864.709961
+        INSERTEVENT: future time will be 12869.957031
+EVENT time: 12869.957031,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (172)
+===============================================================
+EVENT time: 12883.125977,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (2015)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12883.125977
+        INSERTEVENT: future time will be 12892.069336
+        START TIMER: starting timer at 12883.125977
+        INSERTEVENT: time is 12883.125977
+        INSERTEVENT: future time will be 12903.125977
+EVENT time: 12892.069336,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (2015)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12892.069336
+        INSERTEVENT: future time will be 12901.391602
+EVENT time: 12901.391602,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (172)
+===============================================================
+EVENT time: 12903.125977,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (2015)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12903.125977
+        INSERTEVENT: future time will be 12906.122070
+        START TIMER: starting timer at 12903.125977
+        INSERTEVENT: time is 12903.125977
+        INSERTEVENT: future time will be 12923.125977
+EVENT time: 12906.122070,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+     B_RECV: PACKET RECIEVED CORRUPTED/OUT OF STATE (2015)
+===============================================================
+===============================================================
+        B_RECV: SENDING B_PACKET TO NETWORK LAYER (172)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: packet being corrupted
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12906.122070
+        INSERTEVENT: future time will be 12907.271484
+EVENT time: 12907.271484,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+       A_RECV: PACKET RECIEVED CORRUPTED/WRONG ACK (172)
+===============================================================
+EVENT time: 12923.125977,  type: 0, timerinterrupt   entity: 0
+===============================================================
+            A HAS TIMED OUT, RESENDING PACKET (2015)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12923.125977
+        INSERTEVENT: future time will be 12930.694336
+        START TIMER: starting timer at 12923.125977
+        INSERTEVENT: time is 12923.125977
+        INSERTEVENT: future time will be 12943.125977
+EVENT time: 12930.694336,  type: 2, from network layer  entity: 1
+===============================================================
+                        START OF B_RECV
+===============================================================
+===============================================================
+            B_RECV: PACKET RECIEVED PROPERLY (2015)
+===============================================================
+===============================================================
+          B_RECV: DELIVERING DATA TO APPLICATION LAYER
+===============================================================
+        TO_APP_LAYER: data received: jjjjjjjjjjjjjjjjjjj
+===============================================================
+         B_RECV: SENDING PACKET TO NETWORK LAYER (171)
+===============================================================
+        TO_NETWORK_LAYER: packet not lost
+        TO_NETWORK_LAYER: scheduling arrival on other side
+        INSERTEVENT: time is 12930.694336
+        INSERTEVENT: future time will be 12934.868164
+EVENT time: 12934.868164,  type: 2, from network layer  entity: 0
+===============================================================
+                        START OF A_RECV
+===============================================================
+===============================================================
+           A_RECV: PACKET RECIEVED UNCORRUPTED (171)
+===============================================================
+        STOP TIMER: stopping timer at 12934.868164
+Terminated at time 12934.868164
+ after sending 10 msgs from app layer
